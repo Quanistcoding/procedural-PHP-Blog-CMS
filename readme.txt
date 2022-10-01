@@ -1,4 +1,5 @@
 This is a procedural PHP BLog CMS. 
+The dababase configuration is in the db.php file in the root folder.
 To use it, first create a mysql database and tables using the following command:
 
     CREATE DATABASE cms;
