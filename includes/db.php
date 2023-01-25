@@ -1,8 +1,12 @@
-<?php
 
+
+<?php
+if(empty(getenv('db_password'))){
+    throw new Exception("environment variable db_password for mySQL servser is not set.");
+}
 $db['db_host'] = "localhost";
 $db['db_user'] = "root";
-$db['db_password'] = "1234";
+$db['db_password'] = getenv('db_password');
 $db['db_name'] = "cms";
 
 foreach($db as $key => $value){
